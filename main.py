@@ -4,7 +4,7 @@ import requests
 
 
 def get_weather(city):
-    api_key = '4aa5f1ba716a4b499c9120633232807'
+    api_key = 'YOUR_API_KEY' # Replace 'YOUR_API_KEY' with your actual WeatherAPI key
     base_url = 'http://api.weatherapi.com/v1/current.json'
 
     params = {
