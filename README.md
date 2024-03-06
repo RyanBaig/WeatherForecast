@@ -47,7 +47,4 @@ def get_weather(city):
 
 This project is licensed under the [MIT License](LICENSE.txt).
 
----
-
-Feel free to customize the README with additional information, such as the purpose of the application, potential future improvements, or any other relevant details. The above README provides a basic outline of the application, its features, how to use it, and the API key setup.
 

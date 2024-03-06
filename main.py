@@ -1,16 +1,30 @@
 import tkinter as tk
 from tkinter import messagebox
 import requests
+import threading
 
 
-def get_weather(city):
-    api_key = 'YOUR_API_KEY' # Replace 'YOUR_API_KEY' with your actual WeatherAPI key
-    base_url = 'http://api.weatherapi.com/v1/current.json'
+def get_weather():
+    """
+    Get weather information for a given city.
 
-    params = {
-        'key': api_key,
-        'q': city
-    }
+    Parameters:
+    - None
+
+    Returns:
+    - None
+
+    Raises:
+    - None
+
+    Example Usage:
+    get_weather()
+    """
+    city = entry_city.get()
+    api_key = "YOUR_API_KEY"  # Replace 'YOUR_API_KEY' with your actual WeatherAPI key
+    base_url = "http://api.weatherapi.com/v1/current.json"
+
+    params = {"key": api_key, "q": city}
 
     try:
         response = requests.get(base_url, params=params)
@@ -30,9 +44,18 @@ Cloud Cover: {data['current']['cloud']}%\n
 
             messagebox.showinfo("Weather Information", weather_info)
         else:
-            messagebox.showerror("Error", f"Failed to retrieve data. Status code: {response.status_code}")
+            messagebox.showerror(
+                "Error", f"Failed to retrieve data. Status code: {response.status_code}"
+            )
     except requests.exceptions.RequestException as e:
-        messagebox.showerror("Error", f"An error occurred during the API request: {str(e)}")
+        messagebox.showerror(
+            "Error", f"An error occurred during the API request: {str(e)}"
+        )
+
+
+def get_weather_thread():
+    thread = threading.Thread(get_weather())
+    thread.start()
 
 
 # Create the main Tkinter window
@@ -54,13 +77,36 @@ font_size_button = 12
 root.config(bg=bg_color)
 
 # Create widgets
-heading_label = tk.Label(root, text="Weather Information", font=(font_family, font_size_heading), fg=fg_color,
-                         bg=bg_color)
-label_city = tk.Label(root, text="Enter City:", font=(font_family, font_size_label), fg=fg_color, bg=bg_color)
-entry_city = tk.Entry(root, font=(font_family, font_size_entry), bg=bg_color, bd=0, fg=fg_color)
-button_get_weather = tk.Button(root, text="Get Weather", font=(font_family, font_size_button), bg="#3498db",
-                               fg=fg_color,
-                               activebackground="#2980b9", relief=tk.FLAT, command=lambda: get_weather(entry_city.get()))
+heading_label = tk.Label(
+    root,
+    text="Weather Information",
+    font=(font_family, font_size_heading),
+    fg=fg_color,
+    bg=bg_color,
+)
+
+label_city = tk.Label(
+    root,
+    text="Enter City:",
+    font=(font_family, font_size_label),
+    fg=fg_color,
+    bg=bg_color,
+)
+
+entry_city = tk.Entry(
+    root, font=(font_family, font_size_entry), bg=bg_color, bd=0, fg=fg_color
+)
+button_get_weather = tk.Button(
+    root,
+    text="Get Weather",
+    font=(font_family, font_size_button),
+    bg="#3498db",
+    fg=fg_color,
+    activebackground="#2980b9",
+    relief=tk.FLAT,
+    command=lambda: get_weather_thread(),
+)
+
 icon_label = tk.Label(root, bg=bg_color)
 
 # Grid layout (center-aligned)
@@ -73,7 +119,7 @@ button_get_weather.grid(row=2, column=0, columnspan=2, padx=20, pady=20, sticky=
 root.bind("<Map>", lambda event: entry_city.focus_set())
 
 # Bind the return key to get_weather
-root.bind("<Return>", lambda event: get_weather(entry_city.get()))
+root.bind("<Return>", lambda event: get_weather_thread())
 
 # Start the Tkinter event loop
 root.mainloop()

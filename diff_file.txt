@@ -1,0 +1,482 @@
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+index 26d3352..0000000
+--- a/.idea/.gitignore
++++ /dev/null
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+diff --git a/.idea/WeatherForecast.iml b/.idea/WeatherForecast.iml
+deleted file mode 100644
+index 74d515a..0000000
+--- a/.idea/WeatherForecast.iml
++++ /dev/null
+@@ -1,10 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="PYTHON_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/venv" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+diff --git a/.idea/codeStyles/codeStyleConfig.xml b/.idea/codeStyles/codeStyleConfig.xml
+deleted file mode 100644
+index a55e7a1..0000000
+--- a/.idea/codeStyles/codeStyleConfig.xml
++++ /dev/null
+@@ -1,5 +0,0 @@
+-<component name="ProjectCodeStyleConfiguration">
+-  <state>
+-    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
+-  </state>
+-</component>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+deleted file mode 100644
+index 8f2ccb0..0000000
+--- a/.idea/inspectionProfiles/Project_Default.xml
++++ /dev/null
+@@ -1,34 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <profile version="1.0">
+-    <option name="myName" value="Project Default" />
+-    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="ignoredPackages">
+-        <value>
+-          <list size="3">
+-            <item index="0" class="java.lang.String" itemvalue="openpyxl" />
+-            <item index="1" class="java.lang.String" itemvalue="pandas" />
+-            <item index="2" class="java.lang.String" itemvalue="PIL" />
+-          </list>
+-        </value>
+-      </option>
+-    </inspection_tool>
+-    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+-      <option name="ignoredErrors">
+-        <list>
+-          <option value="N802" />
+-        </list>
+-      </option>
+-    </inspection_tool>
+-    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+-    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false">
+-      <option name="ignoredIdentifiers">
+-        <list>
+-          <option value="keyboard" />
+-          <option value="list.forward" />
+-          <option value="random.random.choice" />
+-          <option value="tkinter.messagebox.showerror" />
+-        </list>
+-      </option>
+-    </inspection_tool>
+-  </profile>
+-</component>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+deleted file mode 100644
+index 105ce2d..0000000
+--- a/.idea/inspectionProfiles/profiles_settings.xml
++++ /dev/null
+@@ -1,6 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="USE_PROJECT_PROFILE" value="false" />
+-    <version value="1.0" />
+-  </settings>
+-</component>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+index 25ab3ed..0000000
+--- a/.idea/misc.xml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (WeatherForecast)" project-jdk-type="Python SDK" />
+-</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+index ccb23f4..0000000
+--- a/.idea/modules.xml
++++ /dev/null
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/WeatherForecast.iml" filepath="$PROJECT_DIR$/.idea/WeatherForecast.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/LICENSE b/LICENSE
+index 0db76fe..a12b314 100644
+--- a/LICENSE
++++ b/LICENSE
+@@ -1,21 +1,21 @@
+-MIT License
+-
+-Copyright (c) 2023 Ryan Baig
+-
+-Permission is hereby granted, free of charge, to any person obtaining a copy
+-of this software and associated documentation files (the "Software"), to deal
+-in the Software without restriction, including without limitation the rights
+-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+-copies of the Software, and to permit persons to whom the Software is
+-furnished to do so, subject to the following conditions:
+-
+-The above copyright notice and this permission notice shall be included in all
+-copies or substantial portions of the Software.
+-
+-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+-SOFTWARE.
++MIT License
++
++Copyright (c) 2023 Ryan Baig
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
+diff --git a/README.md b/README.md
+index ee34920..3bd8558 100644
+--- a/README.md
++++ b/README.md
+@@ -1,53 +1,50 @@
+-# Weather Information Application
+-
+-The Weather Information Application is a simple Python GUI application built using the Tkinter library. It allows users to enter a city name and retrieve real-time weather information for that city using the WeatherAPI service.
+-
+-![Weather Information Application](screenshots.JPG)
+-
+-## Features
+-
+-- Input field to enter the city name.
+-- "Get Weather" button to fetch the weather information for the specified city.
+-- Real-time weather information displayed in a pop-up message box.
+-- Support for triggering the weather retrieval using the Enter key.
+-
+-## Requirements
+-
+-- Python 3.x
+-- Tkinter library (usually included with Python installations)
+-
+-## How to Use
+-
+-1. Make sure you have Python 3.x installed on your computer.
+-2. Clone or download this repository to your local machine.
+-3. Open a terminal or command prompt and navigate to the directory where the repository is located.
+-4. Run the following command to launch the Weather Information Application:
+-```bash
+-python main.py
+-```
+-
+-5. The application window will open, allowing you to enter a city name in the input field.
+-6. Press the "Get Weather" button or simply press the Enter key to retrieve the weather information for the specified city.
+-7. The weather information, including current temperature, feels-like temperature, wind speed, humidity, pressure, precipitation, and cloud cover, will be displayed in a pop-up message box.
+-
+-## API Key
+-
+-To successfully fetch weather data, you need to obtain an API key from [WeatherAPI](https://weatherapi.com). The API key should be added to the `api_key` variable in the `get_weather` function. Please make sure to replace `'YOUR_API_KEY'` with your actual WeatherAPI key.
+-```python
+-def get_weather(city):
+-    api_key = 'YOUR_API_KEY' # Replace 'YOUR_API_KEY' with the actual API key from WeatherAPI
+-# ....
+-```
+-
+-## Acknowledgments
+-
+-- The application uses the [WeatherAPI](https://www.weatherapi.com/) service to retrieve weather data.
+-
+-## License
+-
+-This project is licensed under the [MIT License](LICENSE.txt).
+-
+----
+-
+-Feel free to customize the README with additional information, such as the purpose of the application, potential future improvements, or any other relevant details. The above README provides a basic outline of the application, its features, how to use it, and the API key setup.
+-
++# Weather Information Application
++
++The Weather Information Application is a simple Python GUI application built using the Tkinter library. It allows users to enter a city name and retrieve real-time weather information for that city using the WeatherAPI service.
++
++![Weather Information Application](screenshots.JPG)
++
++## Features
++
++- Input field to enter the city name.
++- "Get Weather" button to fetch the weather information for the specified city.
++- Real-time weather information displayed in a pop-up message box.
++- Support for triggering the weather retrieval using the Enter key.
++
++## Requirements
++
++- Python 3.x
++- Tkinter library (usually included with Python installations)
++
++## How to Use
++
++1. Make sure you have Python 3.x installed on your computer.
++2. Clone or download this repository to your local machine.
++3. Open a terminal or command prompt and navigate to the directory where the repository is located.
++4. Run the following command to launch the Weather Information Application:
++```bash
++python main.py
++```
++
++5. The application window will open, allowing you to enter a city name in the input field.
++6. Press the "Get Weather" button or simply press the Enter key to retrieve the weather information for the specified city.
++7. The weather information, including current temperature, feels-like temperature, wind speed, humidity, pressure, precipitation, and cloud cover, will be displayed in a pop-up message box.
++
++## API Key
++
++To successfully fetch weather data, you need to obtain an API key from [WeatherAPI](https://weatherapi.com). The API key should be added to the `api_key` variable in the `get_weather` function. Please make sure to replace `'YOUR_API_KEY'` with your actual WeatherAPI key.
++```python
++def get_weather(city):
++    api_key = 'YOUR_API_KEY' # Replace 'YOUR_API_KEY' with the actual API key from WeatherAPI
++# ....
++```
++
++## Acknowledgments
++
++- The application uses the [WeatherAPI](https://www.weatherapi.com/) service to retrieve weather data.
++
++## License
++
++This project is licensed under the [MIT License](LICENSE.txt).
++
++
+diff --git a/main.py b/main.py
+index d2dcbab..ccf0b7c 100644
+--- a/main.py
++++ b/main.py
+@@ -1,79 +1,125 @@
+-import tkinter as tk
+-from tkinter import messagebox
+-import requests
+-
+-
+-def get_weather(city):
+-    api_key = 'YOUR_API_KEY' # Replace 'YOUR_API_KEY' with your actual WeatherAPI key
+-    base_url = 'http://api.weatherapi.com/v1/current.json'
+-
+-    params = {
+-        'key': api_key,
+-        'q': city
+-    }
+-
+-    try:
+-        response = requests.get(base_url, params=params)
+-
+-        if response.status_code == 200:
+-            data = response.json()
+-            weather_info = f"""Weather Information for {data['location']['name']}, {data['location']['country']}:\n
+-Current Temperature: {data['current']['temp_c']}°C ({data['current']['temp_f']}°F)\n
+-Feels Like: {data['current']['feelslike_c']}°C ({data['current']['feelslike_f']}°F)\n
+-Condition: {data['current']['condition']['text']}\n
+-Wind: {data['current']['wind_kph']} kph ({data['current']['wind_mph']} mph) {data['current']['wind_dir']}\n
+-Humidity: {data['current']['humidity']}%\n
+-Pressure: {data['current']['pressure_mb']} mb ({data['current']['pressure_in']} inHg)\n
+-Precipitation: {data['current']['precip_mm']} mm ({data['current']['precip_in']} in)\n
+-Cloud Cover: {data['current']['cloud']}%\n
+-"""
+-
+-            messagebox.showinfo("Weather Information", weather_info)
+-        else:
+-            messagebox.showerror("Error", f"Failed to retrieve data. Status code: {response.status_code}")
+-    except requests.exceptions.RequestException as e:
+-        messagebox.showerror("Error", f"An error occurred during the API request: {str(e)}")
+-
+-
+-# Create the main Tkinter window
+-root = tk.Tk()
+-root.title("Weather Information")
+-root.geometry("400x350")
+-root.resizable(False, False)
+-
+-# Custom Colors and Fonts
+-bg_color = "#34495e"
+-fg_color = "#ecf0f1"
+-font_family = "Helvetica"
+-font_size_heading = 18
+-font_size_label = 12
+-font_size_entry = 12
+-font_size_button = 12
+-
+-# Set the background color for the entire window
+-root.config(bg=bg_color)
+-
+-# Create widgets
+-heading_label = tk.Label(root, text="Weather Information", font=(font_family, font_size_heading), fg=fg_color,
+-                         bg=bg_color)
+-label_city = tk.Label(root, text="Enter City:", font=(font_family, font_size_label), fg=fg_color, bg=bg_color)
+-entry_city = tk.Entry(root, font=(font_family, font_size_entry), bg=bg_color, bd=0, fg=fg_color)
+-button_get_weather = tk.Button(root, text="Get Weather", font=(font_family, font_size_button), bg="#3498db",
+-                               fg=fg_color,
+-                               activebackground="#2980b9", relief=tk.FLAT, command=lambda: get_weather(entry_city.get()))
+-icon_label = tk.Label(root, bg=bg_color)
+-
+-# Grid layout (center-aligned)
+-heading_label.grid(row=0, column=0, columnspan=2, padx=20, pady=(30, 10), sticky="ew")
+-label_city.grid(row=1, column=0, padx=20, pady=5, sticky="e")
+-entry_city.grid(row=1, column=1, padx=20, pady=5, sticky="ew")
+-button_get_weather.grid(row=2, column=0, columnspan=2, padx=20, pady=20, sticky="ew")
+-
+-# Set focus to the entry widget when the window opens
+-root.bind("<Map>", lambda event: entry_city.focus_set())
+-
+-# Bind the return key to get_weather
+-root.bind("<Return>", lambda event: get_weather(entry_city.get()))
+-
+-# Start the Tkinter event loop
+-root.mainloop()
++import tkinter as tk
++from tkinter import messagebox
++import requests
++import threading
++
++
++def get_weather():
++    """
++    Get weather information for a given city.
++
++    Parameters:
++    - None
++
++    Returns:
++    - None
++
++    Raises:
++    - None
++
++    Example Usage:
++    get_weather()
++    """
++    city = entry_city.get()
++    api_key = "YOUR_API_KEY"  # Replace 'YOUR_API_KEY' with your actual WeatherAPI key
++    base_url = "http://api.weatherapi.com/v1/current.json"
++
++    params = {"key": api_key, "q": city}
++
++    try:
++        response = requests.get(base_url, params=params)
++
++        if response.status_code == 200:
++            data = response.json()
++            weather_info = f"""Weather Information for {data['location']['name']}, {data['location']['country']}:\n
++Current Temperature: {data['current']['temp_c']}°C ({data['current']['temp_f']}°F)\n
++Feels Like: {data['current']['feelslike_c']}°C ({data['current']['feelslike_f']}°F)\n
++Condition: {data['current']['condition']['text']}\n
++Wind: {data['current']['wind_kph']} kph ({data['current']['wind_mph']} mph) {data['current']['wind_dir']}\n
++Humidity: {data['current']['humidity']}%\n
++Pressure: {data['current']['pressure_mb']} mb ({data['current']['pressure_in']} inHg)\n
++Precipitation: {data['current']['precip_mm']} mm ({data['current']['precip_in']} in)\n
++Cloud Cover: {data['current']['cloud']}%\n
++"""
++
++            messagebox.showinfo("Weather Information", weather_info)
++        else:
++            messagebox.showerror(
++                "Error", f"Failed to retrieve data. Status code: {response.status_code}"
++            )
++    except requests.exceptions.RequestException as e:
++        messagebox.showerror(
++            "Error", f"An error occurred during the API request: {str(e)}"
++        )
++
++
++def get_weather_thread():
++    thread = threading.Thread(get_weather())
++    thread.start()
++
++
++# Create the main Tkinter window
++root = tk.Tk()
++root.title("Weather Information")
++root.geometry("400x350")
++root.resizable(False, False)
++
++# Custom Colors and Fonts
++bg_color = "#34495e"
++fg_color = "#ecf0f1"
++font_family = "Helvetica"
++font_size_heading = 18
++font_size_label = 12
++font_size_entry = 12
++font_size_button = 12
++
++# Set the background color for the entire window
++root.config(bg=bg_color)
++
++# Create widgets
++heading_label = tk.Label(
++    root,
++    text="Weather Information",
++    font=(font_family, font_size_heading),
++    fg=fg_color,
++    bg=bg_color,
++)
++
++label_city = tk.Label(
++    root,
++    text="Enter City:",
++    font=(font_family, font_size_label),
++    fg=fg_color,
++    bg=bg_color,
++)
++
++entry_city = tk.Entry(
++    root, font=(font_family, font_size_entry), bg=bg_color, bd=0, fg=fg_color
++)
++button_get_weather = tk.Button(
++    root,
++    text="Get Weather",
++    font=(font_family, font_size_button),
++    bg="#3498db",
++    fg=fg_color,
++    activebackground="#2980b9",
++    relief=tk.FLAT,
++    command=lambda: get_weather_thread(),
++)
++
++icon_label = tk.Label(root, bg=bg_color)
++
++# Grid layout (center-aligned)
++heading_label.grid(row=0, column=0, columnspan=2, padx=20, pady=(30, 10), sticky="ew")
++label_city.grid(row=1, column=0, padx=20, pady=5, sticky="e")
++entry_city.grid(row=1, column=1, padx=20, pady=5, sticky="ew")
++button_get_weather.grid(row=2, column=0, columnspan=2, padx=20, pady=20, sticky="ew")
++
++# Set focus to the entry widget when the window opens
++root.bind("<Map>", lambda event: entry_city.focus_set())
++
++# Bind the return key to get_weather
++root.bind("<Return>", lambda event: get_weather_thread())
++
++# Start the Tkinter event loop
++root.mainloop()
